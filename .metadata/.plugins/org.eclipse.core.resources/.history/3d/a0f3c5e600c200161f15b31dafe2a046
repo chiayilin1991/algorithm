@@ -1,0 +1,70 @@
+package com.jeremyLin.algorithm;
+
+import com.jeremyLin.filereader.*;
+
+
+public class Run {
+
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Run testRun = new Run();
+		KNN knn =new KNN();
+		
+		DataMaker dataMaker = new DataMaker();
+		float[][] stockData = dataMaker.getData();
+		//stockData = dataMeader.makeTarget(stockData);
+		
+		//float[][] a={{1,2,3,4,4,2,7,3,2},{5,6,7,8,7,3,4,1,4},{9,10,11,12,5,6,3,8,6}};
+		
+		//float[][] knnTest = knn.normalize(stockData);
+		//float[][] result =knn.calculate(knnTest);
+		//result = knn.bubbleSort(result);
+		
+		//float[][] verification = knn.doKNNVerification(20, 3, stockData);
+		
+		
+		testRun.print1DArray(dataMaker.getMAData(5, dataMaker.getClosePrice(4, stockData)));
+		
+		//System.out.println(knn.doKNNPrediction(3, stockData)+"======");
+		
+		
+		
+		
+		
+	
+		
+		
+				
+	}
+	
+	public Run() {
+	
+		
+	}
+
+	public void print1DArray(float[] data){
+		int length = data.length;
+		
+		for(int i=0; i<length; i++){
+			System.out.println(data[i]);
+		}
+	}
+	
+	public void print2DArray(float[][] data){
+		int xLength = data.length;
+		int yLength = data[0].length;
+				
+		for(int i=0; i<yLength; i++){
+			for(int j=0; j<xLength; j++){
+				if(j!=xLength-1){
+					System.out.print(data[j][i]+"  ");
+				}else {
+					System.out.println(data[j][i]);
+				}
+			}
+		}
+	}
+
+}

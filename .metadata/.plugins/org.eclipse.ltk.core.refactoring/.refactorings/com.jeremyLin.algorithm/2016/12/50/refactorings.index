@@ -1,0 +1,8 @@
+1480948231146	Rename package 'csvReader'
+1480948752289	Rename package 'com.jeremyLin.csvReader'
+1480949326899	Rename type 'CSVReader'
+1480949353328	Rename type 'dataReader'
+1480953106995	Rename type 'DataReader'
+1481033149759	Rename method 'makeKNNPrediction'
+1481132008976	Rename local variable 'dataReader'
+1481132482934	Rename local variable 'dataMeader'
